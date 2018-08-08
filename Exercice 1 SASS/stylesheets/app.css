@@ -1,0 +1,441 @@
+/**************\
+    FONTS
+\**************/
+@font-face {
+  font-family: 'BallparkWeiner';
+  src: url("/home/rdeliance/Desktop/Exercice 1/assets/ballpark.eot");
+  src: url("ballpark.eot?#iefix") format("embedded-opentype"), url("/home/rdeliance/Desktop/Exercice 1/assets/ballpark.woff") format("woff"), url("/home/rdeliance/Desktop/Exercice 1/assets/polices/ballpark.ttf") format("truetype"), url("/home/rdeliance/Desktop/Exercice 1/assets/ballpark.svg#BallparkWeiner") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Dayrom';
+  src: url("/home/rdeliance/Desktop/Exercice 1/assets/dayrom.eot");
+  src: url("/home/rdeliance/Desktop/Exercice 1/assets/dayrom.eot?#iefix") format("embedded-opentype"), url("/home/rdeliance/Desktop/Exercice 1/assets/dayrom.woff") format("woff"), url("/home/rdeliance/Desktop/Exercice 1/assets/dayrom.ttf") format("truetype"), url("/home/rdeliance/Desktop/Exercice 1/assets/dayrom.svg#Dayrom") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/**************\
+    BASE
+\**************/
+/* line 33, ../sass/_home.scss */
+* {
+  box-sizing: border-box;
+}
+
+/* line 35, ../sass/_home.scss */
+body {
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+  background: url("/home/rdeliance/Desktop/Exercice 1/img/fond_jaune.png");
+  font-family: 'Trebuchet MS', Arial, sans-serif;
+  color: #181818;
+}
+
+/* line 45, ../sass/_home.scss */
+section h1, footer h1, nav a {
+  font-family: Dayrom, serif;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+/***************\
+    HEADER
+\***************/
+/* line 56, ../sass/_home.scss */
+header {
+  background: url("/home/rdeliance/Desktop/Exercice 1/img/separateur.png") repeat-x bottom;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+/* line 64, ../sass/_home.scss */
+.logo {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
+/* line 70, ../sass/_home.scss */
+.logo img {
+  width: 100px;
+  height: 65px;
+}
+
+/* line 76, ../sass/_home.scss */
+header h1 {
+  font-family: 'BallparkWeiner', serif;
+  font-size: 2.5em;
+  font-weight: normal;
+  margin: 0 0 0 10px;
+}
+/* line 83, ../sass/_home.scss */
+header h1 h2 {
+  font-family: Dayrom, serif;
+  font-size: 1.1em;
+  margin-top: 0px;
+  font-weight: normal;
+}
+
+/***************\
+    NAVIGATION
+\***************/
+/* line 95, ../sass/_home.scss */
+nav ul {
+  list-style-type: none;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 102, ../sass/_home.scss */
+nav ul li {
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 107, ../sass/_home.scss */
+nav ul a {
+  font-size: 1.3em;
+  color: #181818;
+  padding-bottom: 3px;
+  text-decoration: none;
+}
+/* line 114, ../sass/_home.scss */
+nav ul a:hover {
+  color: #760001;
+  border-bottom: 3px solid #760001;
+}
+
+/****************\
+    BANNIERE
+\****************/
+/* line 124, ../sass/_home.scss */
+.banniere_image {
+  margin-top: 15px;
+  width: 100%;
+  height: 250px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  background: url("/home/rdeliance/Desktop/Exercice 1/img/banniere.jpg") no-repeat;
+  position: relative;
+  box-shadow: 0px 4px 4px #1c1a19;
+  margin-bottom: 25px;
+}
+
+/* line 138, ../sass/_home.scss */
+.banniere_description {
+  position: absolute;
+  bottom: 0;
+  border-radius: 0px 0px 5px 5px;
+  width: 99.8%;
+  height: 33px;
+  padding-top: 15px;
+  padding-left: 4px;
+  background-color: rgba(24, 24, 24, 0.8);
+  color: white;
+  font-size: 0.8em;
+}
+
+/* line 153, ../sass/_home.scss */
+.bouton_rouge {
+  height: 25px;
+  position: absolute;
+  right: 5px;
+  bottom: 5px;
+  background: url("/home/rdeliance/Desktop/Exercice 1/img/fond_degraderouge.png") repeat-x;
+  border: 1px solid #760001;
+  border-radius: 5px;
+  font-size: 1.2em;
+  text-align: center;
+  padding: 3px 8px 0px 8px;
+  color: white;
+  text-decoration: none;
+}
+/* line 168, ../sass/_home.scss */
+.bouton_rouge img {
+  border: 0;
+}
+
+/***************\
+    CORPS
+\***************/
+/* line 177, ../sass/_home.scss */
+section {
+  display: flex;
+  margin-bottom: 20px;
+}
+/* line 182, ../sass/_home.scss */
+section h1 {
+  text-decoration: underline;
+}
+
+/* line 187, ../sass/_home.scss */
+article, aside {
+  font-size: 20px;
+  text-align: justify;
+}
+
+/* line 193, ../sass/_home.scss */
+article {
+  margin-right: 20px;
+  flex: 3;
+}
+/* line 198, ../sass/_home.scss */
+article p {
+  font-size: 1.0em;
+}
+
+/* line 203, ../sass/_home.scss */
+.ico_categorie {
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
+/***************\
+    SIDE
+\***************/
+/* line 213, ../sass/_home.scss */
+aside {
+  flex: 1.2;
+  position: relative;
+  background-color: #706b64;
+  box-shadow: 0px 2px 5px #1c1a19;
+  border-radius: 5px;
+  padding: 10px;
+  color: white;
+  font-size: 0.9em;
+}
+/* line 224, ../sass/_home.scss */
+aside img {
+  margin-right: 5px;
+}
+
+/* line 229, ../sass/_home.scss */
+.fleche_bulle {
+  position: absolute;
+  top: 100px;
+  left: -12px;
+}
+
+/* line 236, ../sass/_home.scss */
+.photo_mangaka {
+  text-align: center;
+}
+/* line 240, ../sass/_home.scss */
+.photo_mangaka img {
+  border: 1px solid #181818;
+}
+
+/* line 245, ../sass/_home.scss */
+.video {
+  float: left;
+  position: absolute;
+}
+
+/* line 251, ../sass/_home.scss */
+.header__icon {
+  display: none;
+}
+
+/***************\
+    EPISODES
+\***************/
+/* line 5, ../sass/_episodes.scss */
+.episodes a {
+  font-size: 1.3em;
+  color: inherit;
+  width: 33%;
+  display: inline-block;
+  text-align: center;
+  border: 1px solid #760001;
+  border-radius: 5px;
+  padding-bottom: 50px;
+  padding-top: 50px;
+  text-decoration: none;
+}
+
+/****************\
+    SMARTPHONE
+\****************/
+@media only screen and (max-width: 425px) {
+  /* line 23, ../sass/_episodes.scss */
+  .episodes {
+    width: 100%;
+  }
+  /* line 26, ../sass/_episodes.scss */
+  .episodes a {
+    width: 100%;
+  }
+}
+/*****************\
+    TABLETTES
+\*****************/
+@media only screen and (min-width: 425px) and (max-width: 768px) {
+  /* line 37, ../sass/_episodes.scss */
+  .episodes {
+    width: 100%;
+  }
+  /* line 40, ../sass/_episodes.scss */
+  .episodes a {
+    width: 49.3%;
+  }
+}
+/*****************\
+    ECRAN PC
+\*****************/
+@media only screen and (min-width: 768px) and (max-width: 1280px) {
+  /* line 51, ../sass/_episodes.scss */
+  .episodes {
+    width: 100%;
+  }
+  /* line 54, ../sass/_episodes.scss */
+  .episodes a {
+    width: 32.8%;
+  }
+}
+/*****************\
+    RESP MENU
+\*****************/
+/* line 64, ../sass/_episodes.scss */
+.header__icon {
+  display: none;
+}
+
+@media only screen and (max-width: 500px) {
+  /* line 69, ../sass/_episodes.scss */
+  .site-pusher {
+    height: 100%;
+  }
+
+  /* line 70, ../sass/_episodes.scss */
+  .bloc_page {
+    overflow: hidden;
+  }
+
+  /* line 72, ../sass/_episodes.scss */
+  .site-pusher {
+    transition-duration: 0.3s;
+    transform: translateX(0px);
+  }
+
+  /* line 77, ../sass/_episodes.scss */
+  .menu-nav {
+    display: none;
+  }
+
+  /* line 80, ../sass/_episodes.scss */
+  .banniere_image, .episodes {
+    overflow: hidden;
+    *zoom: 1;
+  }
+
+  /* line 82, ../sass/_episodes.scss */
+  .header {
+    position: static;
+  }
+
+  /* line 86, ../sass/_episodes.scss */
+  .header__icon {
+    font-weight: bold;
+    padding: 0 25px;
+    position: absolute;
+    top: 0px;
+    left: -13px;
+    float: left;
+  }
+
+  /* line 95, ../sass/_episodes.scss */
+  .header__icon {
+    position: absolute;
+    display: block;
+    float: right;
+    width: 75px;
+    height: 75px;
+    cursor: pointer;
+  }
+
+  /* line 102, ../sass/_episodes.scss */
+  .header__icon:after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 16px;
+    height: 0;
+    top: 27px;
+    right: 31px;
+    text-align: center;
+    box-shadow: 0 10px 0 1px black, 0 16px 0 1px black, 0 22px 0 1px black;
+  }
+
+  /* line 114, ../sass/_episodes.scss */
+  .with--sidebar {
+    transform: translateX(300px);
+  }
+  /* line 116, ../sass/_episodes.scss */
+  .with--sidebar .menu-nav {
+    margin-top: 125px;
+    display: inline-block;
+  }
+  /* line 121, ../sass/_episodes.scss */
+  .with--sidebar .menu {
+    text-align: center;
+    text-decoration: none;
+    color: inherit;
+    margin-right: auto;
+    margin-left: auto;
+    position: absolute;
+  }
+  /* line 129, ../sass/_episodes.scss */
+  .with--sidebar .menu a {
+    margin-bottom: 25px;
+  }
+
+  /* line 136, ../sass/_episodes.scss */
+  .with--sidebar .site-cache {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+
+  /* line 145, ../sass/_episodes.scss */
+  .menu {
+    top: 0;
+    bottom: 0;
+    display: block;
+    width: 393px;
+    transform: translateX(-395px);
+  }
+
+  /* line 153, ../sass/_episodes.scss */
+  .menu a {
+    display: block;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 5px;
+    border-bottom: 1px solid #303f9f;
+  }
+}
+/* line 163, ../sass/_episodes.scss */
+.menu-item:hover {
+  background-color: #FFF;
+}
+
+/* line 1, ../sass/_episode1.scss */
+.videos {
+  width: 100%;
+  display: inline-block;
+}
+
+/* line 1, ../sass/_infos.scss */
+.wiki img {
+  margin-top: 15px;
+  width: 80%;
+  background: url("/home/rdeliance/Desktop/Exercice 1/img/wiki.png") no-repeat;
+  position: absolute;
+  margin-bottom: 25px;
+}
