@@ -183,10 +183,15 @@ article {
 }
 /* line 198, ../sass/_home.scss */
 article p {
+  padding-bottom: 20px;
   font-size: 1.0em;
 }
-
 /* line 203, ../sass/_home.scss */
+article h1 {
+  margin-bottom: 36px;
+}
+
+/* line 208, ../sass/_home.scss */
 .ico_categorie {
   vertical-align: middle;
   margin-right: 8px;
@@ -195,7 +200,7 @@ article p {
 /***************\
     SIDE
 \***************/
-/* line 213, ../sass/_home.scss */
+/* line 218, ../sass/_home.scss */
 aside {
   flex: 1.2;
   position: relative;
@@ -206,38 +211,107 @@ aside {
   color: white;
   font-size: 0.9em;
 }
-/* line 224, ../sass/_home.scss */
+/* line 229, ../sass/_home.scss */
 aside img {
   margin-right: 5px;
 }
 
-/* line 229, ../sass/_home.scss */
+/* line 234, ../sass/_home.scss */
 .fleche_bulle {
   position: absolute;
   top: 100px;
   left: -12px;
 }
 
-/* line 236, ../sass/_home.scss */
+/* line 241, ../sass/_home.scss */
 .photo_mangaka {
   text-align: center;
 }
-/* line 240, ../sass/_home.scss */
+/* line 245, ../sass/_home.scss */
 .photo_mangaka img {
   border: 1px solid #181818;
 }
 
-/* line 245, ../sass/_home.scss */
-.video {
-  float: left;
-  position: absolute;
-}
-
-/* line 251, ../sass/_home.scss */
+/* line 250, ../sass/_home.scss */
 .header__icon {
   display: none;
 }
 
+/* line 254, ../sass/_home.scss */
+.author-smart {
+  display: none;
+}
+
+@media only screen and (max-width: 560px) {
+  /* line 257, ../sass/_home.scss */
+  .author {
+    display: none;
+  }
+
+  /* line 259, ../sass/_home.scss */
+  .author-smart {
+    display: block;
+    margin-bottom: 30px;
+    background-color: green;
+  }
+  /* line 264, ../sass/_home.scss */
+  .author-smart h1 {
+    text-decoration: underline;
+    color: blue;
+  }
+
+  /* line 270, ../sass/_home.scss */
+  .fleche_bulle {
+    display: none;
+  }
+
+  /* line 272, ../sass/_home.scss */
+  .photo_mangaka {
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 560px) and (max-width: 768px) {
+  /* line 276, ../sass/_home.scss */
+  .author {
+    display: none;
+  }
+
+  /* line 278, ../sass/_home.scss */
+  .author-smart {
+    display: block;
+    margin-bottom: 30px;
+    background-color: black;
+  }
+  /* line 283, ../sass/_home.scss */
+  .author-smart h1 {
+    text-decoration: underline;
+    color: red;
+  }
+
+  /* line 289, ../sass/_home.scss */
+  .fleche_bulle {
+    display: none;
+  }
+
+  /* line 291, ../sass/_home.scss */
+  .photo_mangaka {
+    float: left;
+    overflow: hidden;
+    text-align: center;
+  }
+  /* line 296, ../sass/_home.scss */
+  .photo_mangaka img {
+    margin: 0;
+    width: 70%;
+    text-align: center;
+    height: auto;
+  }
+
+  /* line 304, ../sass/_home.scss */
+  .float p {
+    margin-left: 242px;
+  }
+}
 /***************\
     EPISODES
 \***************/
@@ -439,5 +513,5 @@ aside img {
   position: absolute;
   margin-bottom: 25px;
   margin-top: 30px;
-  height: 700px;
+  height: auto;
 }

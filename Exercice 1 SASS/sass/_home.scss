@@ -196,7 +196,12 @@ article
     flex: 3;
 
     p {
+        padding-bottom: 20px;
         font-size: 1.0em;
+    }
+
+    h1 {
+        margin-bottom: 36px;
     }
 }
 
@@ -242,12 +247,61 @@ aside
     }
 }
 
-.video {
-    float: left;
-    position: absolute;
-}
-
-
 .header__icon {
     display: none;
+}
+
+.author-smart {display: none;}
+
+@media only screen and (max-width: 560px) {
+    .author {display: none;}
+
+    .author-smart {
+        display: block;
+        margin-bottom: 30px;
+        background-color: green;
+
+        h1 {
+            text-decoration: underline;
+            color: blue;
+        }
+    }
+
+    .fleche_bulle {display: none;}
+
+    .photo_mangaka {text-align: center;}
+}
+
+@media only screen and (min-width: 560px) and (max-width: 768px) {
+    .author {display: none;}
+
+    .author-smart {
+        display: block;
+        margin-bottom: 30px;
+        background-color: black;
+
+        h1 {
+            text-decoration: underline;
+            color: red;
+        }
+    }
+
+    .fleche_bulle {display: none;}
+
+    .photo_mangaka {
+        float: left;
+        overflow: hidden;
+        text-align: center;
+
+        img {
+            margin: 0;
+            width: 70%;
+            text-align: center;
+            height: auto;
+        }
+    }
+
+    .float p {
+        margin-left: 242px;
+    }
 }
