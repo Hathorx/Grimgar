@@ -172,7 +172,7 @@ section h1 {
 
 /* line 187, ../sass/_home.scss */
 article, aside {
-  font-size: 20px;
+  font-size: 1.250em;
   text-align: justify;
 }
 
@@ -438,4 +438,6 @@ aside img {
   background: url("../img/wiki.png") no-repeat;
   position: absolute;
   margin-bottom: 25px;
+  margin-top: 30px;
+  height: 700px;
 }
